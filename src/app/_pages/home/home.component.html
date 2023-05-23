@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="input content">
+    <div class="title">Дата рождения</div>
+    <input type="date" id="birthdate" [(ngModel)]="selectedDate" (change)="onDateSelected()">
+  </div>
+
+  <div *ngIf="zodiacSign" class="zodiac content">
+    <div class="title">Знак зодиака</div>
+    <div class="text">{{ zodiacSign }}</div>
+  </div>
+</div>
